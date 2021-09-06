@@ -220,6 +220,14 @@
     
     
     
+      
+  <div class="popular-posts-header">Related Posts</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2021/08/09/photo-2021-08/" rel="bookmark">Photo Last Month</a></div>
+    </li>
+  </ul>
+
 
       <footer class="post-footer">
           <div class="post-tags">
@@ -248,13 +256,7 @@
 
           </div>
           
-    
-  <div class="comments">
-    <div id="disqus_thread">
-      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-    </div>
-  </div>
-  
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -493,20 +495,23 @@ if (document.querySelectorAll('pre.mermaid').length) {
 
   
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
 <script>
-NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js', () => {
-    window.dsqjs = new DisqusJS({
-      api       : '' || 'https://disqus.com/api/',
-      apikey    : 'P6X9qbU90SRE4SKQZ9fUP38KO218zNr1NVViufGaI6jR5RVd2vEQiW9ApRlf0R33',
-      shortname : 'rykk',
-      url       : "http://gu-fan.github.io/2021/09/06/chasing-clouds/",
-      identifier: "2021/09/06/chasing-clouds/",
-      title     : "追逐云朵",
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'be83cecb62e31fe1db37',
+      clientSecret: '0624b5b2e49499a5e0bf84f8d88ffb2228803e33',
+      repo        : 'gu-fan.github.io.gitalk',
+      owner       : 'gu-fan',
+      admin       : ['gu-fan'],
+      id          : '6249f1dffdae589f26a084b0d637d449',
+        language: '',
+      distractionFreeMode: true
     });
-  }, window.DisqusJS);
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
 });
 </script>
 
