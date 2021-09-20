@@ -83,6 +83,8 @@
   </style>
 </noscript>
 
+<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -163,6 +165,185 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://gu-fan.github.io/2021/09/20/embed-music/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Rykk">
+      <meta itemprop="description" content="coding and writing">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mist Sets 3rd">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/09/20/embed-music/" class="post-title-link" itemprop="url">在Hexo博客中嵌入音乐</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-09-20 20:34:42 / Modified: 20:58:32" itemprop="dateCreated datePublished" datetime="2021-09-20T20:34:42+08:00">2021-09-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>从网上找到的沉默是金歌曲，测试博客的音乐播放</p>
+<ol>
+<li><p>markdown语法 使用<code>![](filename.mp3)</code> 是不可行的，会被hexo渲染成<code>img</code>标签</p>
+</li>
+<li><p>html直接嵌入，注意我们用绝对地址，为了在首页和文章页面都可以播放：</p>
+</li>
+</ol>
+<audio controls="controls">
+  <source type="audio/mp3" src="/2021/09/20/embed-music/chenmoshijin.mp3"></source>
+</audio>
+
+<p>代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;audio controls=&quot;controls&quot;&gt;</span><br><span class="line">  &lt;source type=&quot;audio/mp3&quot; src=&quot;/2021/09/20/embed-music/chenmoshijin.mp3&quot;&gt;&lt;/source&gt;</span><br><span class="line">&lt;/audio&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>使用hexo的aplayer插件</li>
+</ol>
+
+        <div id="aplayer-oKZilrWj" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-oKZilrWj"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "沉默是金",
+              author: "张国荣/许冠杰",
+              url: "/2021/09/20/embed-music/chenmoshijin.mp3",
+              pic: "/2021/09/20/embed-music/chenmoshijin.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<p>代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;沉默是金&quot; &quot;张国荣/许冠杰&quot; &quot;/2021/09/20/embed-music/chenmoshijin.mp3&quot;  &quot;/2021/09/20/embed-music/chenmoshijin.jpg&quot; %&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>需要安装aplayer </p>
+<p><code>npm install hexo-tag-aplayer</code></p>
+<hr>
+<p>音乐文件来自网络，如有版权问题请留言</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://gu-fan.github.io/2021/09/19/chenmoshijin-lyric/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Rykk">
+      <meta itemprop="description" content="coding and writing">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mist Sets 3rd">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/09/19/chenmoshijin-lyric/" class="post-title-link" itemprop="url">沉默是金粤语歌词</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-09-19 23:14:38" itemprop="dateCreated datePublished" datetime="2021-09-19T23:14:38+08:00">2021-09-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-09-20 20:58:11" itemprop="dateModified" datetime="2021-09-20T20:58:11+08:00">2021-09-20</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>网上找到的版本的拼写是将多音字全列了出来<br>并且少了一个中间段落<br>我把其补充完整,方便看词</p>
+<hr>
+<p>夜风凛凛<br>ye6 fung1 lam5 lam5<br>独回望旧事前尘<br>duk9 wui4 mong6 gau6 si6 chin4 chan4<br>是以往的我 充满怒愤<br>si6 yi5 wong5 dik7 ngo5 chung1 mun5 nou6 fan5<br>诬告与指责<br>mou4 gou3 yu5 ji2 jaak8<br>积压着满肚气不忿<br>jik7 aat8 jeuk9 mun5 tou5 hei3 bat7 fan5<br>对谣言反应甚为着紧<br>deui3 yiu4 yin4 faan2 ying13 sam6 wai46 jeuk9 gan2</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/09/19/chenmoshijin-lyric/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -665,14 +846,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
