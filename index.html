@@ -83,8 +83,6 @@
   </style>
 </noscript>
 
-<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
-<script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -194,7 +192,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-09-20 20:34:42 / Modified: 20:58:32" itemprop="dateCreated datePublished" datetime="2021-09-20T20:34:42+08:00">2021-09-20</time>
+              <time title="Created: 2021-09-20 20:34:42 / Modified: 21:01:49" itemprop="dateCreated datePublished" datetime="2021-09-20T20:34:42+08:00">2021-09-20</time>
             </span>
 
           
@@ -210,52 +208,16 @@
       
           <p>从网上找到的沉默是金歌曲，测试博客的音乐播放</p>
 <ol>
-<li><p>markdown语法 使用<code>![](filename.mp3)</code> 是不可行的，会被hexo渲染成<code>img</code>标签</p>
-</li>
-<li><p>html直接嵌入，注意我们用绝对地址，为了在首页和文章页面都可以播放：</p>
-</li>
+<li>markdown语法 使用<code>![](filename.mp3)</code> 是不可行的，会被hexo渲染成<code>img</code>标签</li>
 </ol>
-<audio controls="controls">
-  <source type="audio/mp3" src="/2021/09/20/embed-music/chenmoshijin.mp3"></source>
-</audio>
-
-<p>代码</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;audio controls=&quot;controls&quot;&gt;</span><br><span class="line">  &lt;source type=&quot;audio/mp3&quot; src=&quot;/2021/09/20/embed-music/chenmoshijin.mp3&quot;&gt;&lt;/source&gt;</span><br><span class="line">&lt;/audio&gt;</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>使用hexo的aplayer插件</li>
-</ol>
-
-        <div id="aplayer-oKZilrWj" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
-            <pre class="aplayer-lrc-content"></pre>
-        </div>
-        <script>
-          var ap = new APlayer({
-            element: document.getElementById("aplayer-oKZilrWj"),
-            narrow: false,
-            autoplay: false,
-            showlrc: false,
-            music: {
-              title: "沉默是金",
-              author: "张国荣/许冠杰",
-              url: "/2021/09/20/embed-music/chenmoshijin.mp3",
-              pic: "/2021/09/20/embed-music/chenmoshijin.jpg",
-              lrc: ""
-            }
-          });
-          window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap);
-        </script>
-
-<p>代码</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;沉默是金&quot; &quot;张国荣/许冠杰&quot; &quot;/2021/09/20/embed-music/chenmoshijin.mp3&quot;  &quot;/2021/09/20/embed-music/chenmoshijin.jpg&quot; %&#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>需要安装aplayer </p>
-<p><code>npm install hexo-tag-aplayer</code></p>
-<hr>
-<p>音乐文件来自网络，如有版权问题请留言</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/09/20/embed-music/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
