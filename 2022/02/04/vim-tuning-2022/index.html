@@ -31,7 +31,7 @@
 <meta property="og:image" content="http://gu-fan.github.io/2022/02/04/vim-tuning-2022/term_color.png">
 <meta property="og:image" content="http://gu-fan.github.io/2022/02/04/vim-tuning-2022/popup.png">
 <meta property="article:published_time" content="2022-02-04T13:09:56.000Z">
-<meta property="article:modified_time" content="2022-02-04T17:37:40.780Z">
+<meta property="article:modified_time" content="2022-02-04T17:41:25.833Z">
 <meta property="article:author" content="Rykk">
 <meta property="article:tag" content="vim">
 <meta name="twitter:card" content="summary">
@@ -205,7 +205,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-05 01:37:40" itemprop="dateModified" datetime="2022-02-05T01:37:40+08:00">2022-02-05</time>
+                <time title="Modified: 2022-02-05 01:41:25" itemprop="dateModified" datetime="2022-02-05T01:41:25+08:00">2022-02-05</time>
               </span>
 
           
@@ -271,7 +271,7 @@
 <p>作为一个vim插件作者和重度使用者,这个新特性我期待了十年以上,<br>看到的时候还是要惊叹,真是太酷了!</p>
 <img data-src="/2022/02/04/vim-tuning-2022/popup.png" class="">
 
-<p>使用也很简单,用<code>:Ag</code>就可以调出这个窗口</p>
+<p>使用也很简单,用<code>:Ag</code>就可以调出这个窗口(注意要删掉<code>rking/ag.vim</code>)</p>
 <p>配置也很简单,我用<code>&lt;Ctrl-k&gt;</code>来唤出实时查找的窗口:</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Plug <span class="string">&#x27;junegunn/fzf&#x27;</span>, &#123; <span class="string">&#x27;do&#x27;</span>: &#123; -&gt; fzf#install() &#125; &#125;</span><br><span class="line">Plug <span class="string">&#x27;junegunn/fzf.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; popup window for search word and preview real time</span></span><br><span class="line"><span class="keyword">noremap</span> <span class="symbol">&lt;c-k&gt;</span> :Ag<span class="symbol">&lt;CR&gt;</span></span><br></pre></td></tr></table></figure>
 
